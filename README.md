@@ -171,18 +171,8 @@ Being upfront about what this doesn't do is as important as what it does:
 - **The jailbreak keyword list is illustrative, not exhaustive.** A production system would need a continuously updated attack corpus and likely a fine-tuned classifier.
 - **PII detection has a precision/recall tradeoff.** `LOCATION` entities are deliberately excluded from redaction because Presidio flags generic place names (e.g. "France" in "capital of France") as false positives — see the comment in `pii_redactor.py`.
 
-## Roadmap
 
-- [ ] Replace the mock LLM call with a real Anthropic/OpenAI integration
-- [ ] Add an `/admin/logs` endpoint to review flagged messages
-- [ ] Expand the jailbreak reference set and add a fine-tuned classifier
-- [ ] Add per-user rate limiting
-- [ ] Deploy a live demo
-
-## License
-
-MIT — free to use, modify, and build on.
 
 ## Author
 
-Built by [Your Name] — [LinkedIn](#) · [Portfolio](#)
+Built by Farhan Kotwal — https://www.linkedin.com/in/farhannk/
